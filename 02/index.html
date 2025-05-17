@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic elements</title>
+</head>
+
+<body>
+    <header>
+        <h1 style="text-align: center;">HTML5 Семантичні елементи</h1>
+
+            <p>Семантичний елемент чітко описує його значення як для браузера, так і
+                    для розробника.</p>
+            <p>Приклади не <b>семантичних</b> елементів: &lt;div&gt; і &lt;span&gt;- нічого не говорить
+                    про його вміст.</p>
+            <p>Приклади <b>семантичних</b> елементів: &lt;form&gt;, &lt;table&gt;і &lt;article&gt;- чітко
+                    визначає його зміст.</p>
+    </header>
+    <nav>
+        <h2>Зміст</h2>
+        <ul>
+            <li><a href="#Browsers_support">Підтримка браузерів</a></li>
+            <li><a href="#New">Нові семантичні елементи в HTML5</a></li>
+            <li><a href="#section">HTML5 &lt;section&gt; елемент</a></li>
+            <li><a href="#article">HTML5 &lt;article&gt; елемент</a></li>
+            <li><a href="#header">HTML5 &lt;header&gt; елемент</a></li>
+            <li><a href="#footer">HTML5 &lt;footer&gt; елемент</a></li>
+            <li><a href="#resume">Погортати резюме</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <section id="Browsers_support">
+                <h2>Підтримка браузерів</h2>
+                <img src="assets/browsers.png" alt="browsers">
+                <br>
+                <p>Семантичні елементи HTML5 підтримуються у всіх сучасних браузерах.</p>
+                <p>Крім того, ви можете "навчити" старих браузерів, як обробляти "невідомі
+                    елементи".</p>
+                <p>Прочитайте про це в <a href="https://webdocs.site/articles/Hyperlinks_in_HTML.pdf">підтримці браузера
+                        HTML5</a> .</p>
+                <a href="#">UP</a>
+            </section>
+            <section id="New">
+                <h2>Нові семантичні елементи в HTML5</h2>
+                <p>HTML5 пропонує нові семантичні елементи для визначення різних частин
+                    веб-сторінки:</p>
+                <ul>
+                    <li>&lt;section&gt;</li>
+                    <li>&lt;article&gt;</li>
+                    <li>&lt;header&gt;</li>
+                    <li>&lt;footer&gt;</li>
+                </ul>
+                <a href="#">UP</a>
+            </section>
+            <section id="section">
+                <h2>HTML5 &lt;section&gt; елемент</h2>
+
+                <p>Елемент &lt;section&gt; визначає розділ в документі.</p>
+                <p>Згідно з документацією в3к'с HTML5: "розділ представляє собою
+                    тематичну угруповання контенту, зазвичай з заголовком".</p>
+                <p>Домашня сторінка зазвичай може бути розділена на розділи для
+                    ознайомлення, змісту і контактної інформації.</p>
+                <figure>
+                    <figcaption>Приклад</figcaption>
+                    <img src="assets/section_ex.png" alt="example">
+                </figure>
+                <a href="#">UP</a>
+            </section>
+            <section id="article">
+                <h2>HTML5 &lt;article&gt; елемент</h2>
+                <p>Елемент &lt;article&gt; визначає незалежний, автономний вміст.</p>
+                <p>Стаття повинна мати сенс самостійно, і вона повинна мати можливість
+                    читати його незалежно від іншої частини веб-сайту.</p>
+                <p>Приклади того, де можна використовувати елемент &lt;article&gt;:</p>
+                <figure>
+                    <figcaption>Приклад</figcaption>
+                    <img src="assets/article_ex.png" alt="example">
+                </figure>
+                <a href="#">UP</a>
+            </section>
+            <section id="header">
+                <h2>HTML5 &lt;header&gt; елемент</h2>
+                <p>Елемент &lt;header&gt;задає заголовок для документа або розділу.</p>
+                <p>Елемент &lt;header&gt; повинен використовуватися в якості контейнера для
+                    вступного змісту.</p>
+                <p>В одному документі може бути кілька елементів &lt;header&gt;</p>
+                <p>У наступному прикладі визначається заголовок для статті:</p>
+                <figure>
+                    <figcaption>Приклад</figcaption>
+                    <img src="assets/header_ex.png" alt="example">
+                </figure>
+                <a href="#">UP</a>
+            </section>
+            <section id="footer">
+                <h2>HTML5 &lt;footer&gt; елемент</h2>
+                <p>Елемент &lt;footer&gt; вказує нижній колонтитул для документа або розділу.
+                авторське право, посилання на умови використання, контактні дані і т.д.</p>
+                <p>Нижній колонтитул зазвичай містить автора документа, інформацію про</p>
+                <p>В одному документі може бути кілька елементів &lt;footer&gt;.</p>
+                <figure>
+                    <figcaption>Приклад</figcaption>
+                    <a href="https://webdocs.site/articles/Semantic_html.pdf" target="_blank"><img src="assets/footer_ex.png" alt="example"></a>
+                </figure>
+                <a href="#">UP</a>
+            </section>
+        </article>
+        <article id="resume">
+            <iframe src="01/index.html" frameborder="0" height="400" width="100%"></iframe>
+        </article>
+    </main>
+</body>
+
+</html>
