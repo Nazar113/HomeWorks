@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        .form-row{
+            margin-bottom: 10px;
+        }
+        .form-row label{
+            display: inline-block;
+            width: 200px;
+        }
+        .form-row input{
+            display: inline-block;
+            width: 200px;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <main>
+        <section>
+            <h1>Форма реєстрації</h1>
+            <form action="#" id="my_form" method="post"
+                onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;">
+                <ul>
+                    <li class="form-row">
+                        <label for="username">Повне ім'я:</label>
+                        <input type="text" id="username" name="username" required>
+                    </li>
+                    <li class="form-row">
+                        <label for="email">E-mail:</label>
+                        <input type="text" id="email" name="email" required>
+                    </li>
+                    <li class="form-row">
+                        <label for="pass">Введіть пароль:</label>
+                        <input type="password" name="pass" id="pass" required>
+                    </li>
+                    <li class="form-row">
+                        <label for="repass">Повторіть пароль:</label>
+                        <input type="password" name="repass" id="repass" required>
+                    </li>
+                    <li >
+                        <label for="gender">Вкажіть стать:</label>
+                        <input type="radio" name="gender" id="gender" value="male" checked>Чоловіча
+                        <label for="gender"></label>
+                        <input type="radio" name="gender" id="gender" value="female">Жіноча
+                    </li>
+                    <li class="form-row">
+                        <label for="old">Введіть свій вік</label>
+                        <input type="number" name="old" id="old" max="100" min="7" value="18">
+                    </li>
+                    <li class="form-row">
+                        <label >Курс
+                            <select name="cuorse" id="cuorse" required>
+                                <option value="defoult" disabled selected>Виберіть курс</option>
+                                <option value="frontend">Front-end</option>
+                                <option value="backend">Back-end</option>
+                                <option value="qa">Qa</option>
+                            </select>
+                        </label>
+                    </li>
+                    <li class="form-row"> 
+                        <label>Введіть адресу:
+                            <textarea name="adress" cols="30" rows="10" placeholder="Місто, вулиця, будинок." required></textarea>
+                        </label>
+                    </li>
+                    <li >
+                        <input type="checkbox" name="agree" id="agree" required>
+                        <label for="agree">Я погоджуюсь з правилами обробки персональних даних</label>
+                    </li>
+                </ul>
+                <button type="submit">Надіслати</button>
+            </form>
+        </section>
+    </main>
 </body>
+
 </html>
