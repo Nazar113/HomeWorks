@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>extra_form</title>
 </head>
+
 <body>
-    
+    <header>
+        <h1>Форма дляреєстрації</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Введіть свої дані</h2>
+            <form action="#" method="post" id="my_form" method="post"
+                onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;">
+                <fieldset>
+                    <legend>Ведіть особисті дані:</legend>
+                    <div>
+                        <label>Введіть ім'я:
+                            <input type="text" name="name" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>Введіть прізвище:
+                            <input type="text" name="secondname" required>
+                        </label>
+                    </div>  
+                    <div>
+                        <label>Введіть елелктронну пошту:
+                            <input type="email" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>Придумайте пароль:
+                            <input type="password" required>
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend></legend>
+                </fieldset>
+                <button type="submit"></button>
+            </form>
+        </section>
+    </main>
 </body>
+
 </html>
