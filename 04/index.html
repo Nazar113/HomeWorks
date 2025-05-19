@@ -6,17 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
     <style>
-        body{
+        body {
             font-family: sans-serif;
         }
-        .form-row{
+
+        .form-row {
             margin-bottom: 10px;
         }
-        .form-row label{
+
+        .form-row label {
             display: inline-block;
             width: 200px;
         }
-        .form-row input{
+
+        .form-row input {
             display: inline-block;
             width: 200px;
         }
@@ -46,7 +49,7 @@
                         <label for="repass">Повторіть пароль:</label>
                         <input type="password" name="repass" id="repass" required>
                     </li>
-                    <li >
+                    <li>
                         <label for="gender">Вкажіть стать:</label>
                         <input type="radio" name="gender" id="gender" value="male" checked>Чоловіча
                         <label for="gender"></label>
@@ -57,7 +60,7 @@
                         <input type="number" name="old" id="old" max="100" min="7" value="18">
                     </li>
                     <li class="form-row">
-                        <label >Курс
+                        <label>Курс
                             <select name="cuorse" id="cuorse" required>
                                 <option value="defoult" disabled selected>Виберіть курс</option>
                                 <option value="frontend">Front-end</option>
@@ -66,12 +69,13 @@
                             </select>
                         </label>
                     </li>
-                    <li class="form-row"> 
+                    <li class="form-row">
                         <label>Введіть адресу:
-                            <textarea name="adress" cols="30" rows="10" placeholder="Місто, вулиця, будинок." required></textarea>
+                            <textarea name="adress" cols="30" rows="10" placeholder="Місто, вулиця, будинок."
+                                required></textarea>
                         </label>
                     </li>
-                    <li >
+                    <li>
                         <input type="checkbox" name="agree" id="agree" required>
                         <label for="agree">Я погоджуюсь з правилами обробки персональних даних</label>
                     </li>
