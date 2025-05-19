@@ -68,6 +68,18 @@
                             placeholder="Свято на 3 людей з 18:00"></textarea>
                     </div>
                 </fieldset>
+                <fieldset>
+                    <legend>Обрати кафе</legend>
+                    <label for="cafes">Оберіть або напишіть</label>
+                    <input type="text" list="cafe" name="cafes" id="cafes">
+                    <datalist name="cafe" id="cafe">
+                        <optgroup label="кафе">
+                    <option value="mac">MacDonalds</option>
+                    <option value="kfc">KFC</option>
+                    <option value="katana">Katana</option>
+                    </optgroup>
+                    </datalist>
+                </fieldset>
                 <button type="submit">ГОТОВО!!</button>
             </form>
             <div>
