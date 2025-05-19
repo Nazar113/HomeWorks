@@ -14,8 +14,8 @@
     <main>
         <section>
             <h2>Введіть свої дані</h2>
-            <form action="#" method="post" id="my_form" method="post"
-                onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;">
+            <form action="#" method="post" id="my_form" onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new
+                FormData(document.getElementById('my_form')))).toString()));return false;">
                 <fieldset>
                     <legend>Ведіть особисті дані:</legend>
                     <div>
@@ -27,7 +27,7 @@
                         <label>Введіть прізвище:
                             <input type="text" name="secondname" required>
                         </label>
-                    </div>  
+                    </div>
                     <div>
                         <label>Введіть елелктронну пошту:
                             <input type="email" required>
@@ -40,10 +40,42 @@
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend></legend>
+                    <legend>Їжа</legend>
+                    <div>
+                        <label><input type="checkbox" name="food[]">Вибрати їжу</label>
+                        <label><input type="checkbox" name="food[]">Вибрати напій</label>
+                    </div>
+                    <div>
+                        <label>Що бажаєте пити?<input type="radio" name="alco" id="alco">Алкогольний напій</label>
+                        <label><input type="radio" name="alco" id="alco2">Безалкогольний напій</label>
+                    </div>
+            
+                    <div>
+                        <label for="fruit">Оберіть фрукти</label>
+                        <select name="fruit" id="fruit">Виберіть фрукти:
+                            <option value="defoult" disabled selected>Зробіть вибір</option>
+                            <option value="apple">apple</option>
+                            <option value="cherry">cherry</option>
+                            <option value="watermelon">watermelon</option>
+                        </select>
+                    </div>
                 </fieldset>
-                <button type="submit"></button>
+                <fieldset>
+                    <legend>Додаткова інформація</legend>
+                    <div>
+                        <label for="info">Напишіть як хочете провести свято:</label>
+                        <textarea name="info" id="info" cols="30" rows="10"
+                            placeholder="Свято на 3 людей з 18:00"></textarea>
+                    </div>
+                </fieldset>
+                <button type="submit">ГОТОВО!!</button>
             </form>
+            <div>
+                        <form action="https://www.google.com/search" target="_blank">
+                        <textarea name="q" id="search"></textarea>
+                        <button type="submit">Пошук страв</button>
+                        </form>
+                    </div>
         </section>
     </main>
 </body>
